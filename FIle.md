@@ -68,7 +68,7 @@ System.out.println("你好!");
 ```
   文件如下图:\
 \
-[![File-1.png](https://i.postimg.cc/wj6fv9qy/File-1.png)](https://postimg.cc/Xpzc1Sy4)
+[![File-1.png](https://i.postimg.cc/FHrxwPYh/File-1.png)](https://postimg.cc/MvLRQm0L)
 * 恢复打印输出流
 ```java
 ps.close();//使用完及时释放
