@@ -34,9 +34,9 @@
   }
   ```
  * 在使用完文件输入后，及时释放对象
-  ```java
-  input.close();
-  ```
+    ```java
+    input.close();
+    ```
 * 根据要求对String进行后续处理，不再赘述
 ## 输出（创建/修改文件）
 使用PrintStream类
