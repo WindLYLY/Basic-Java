@@ -38,44 +38,44 @@
 使用PrintStream类
 ### 示例代码：
 * import 
-```java
-import java.io.File;
-import java.io.PrintStream;
-//也可以用import java.io.*;代替
-```
+  ```java
+  import java.io.File;
+  import java.io.PrintStream;
+  //也可以用import java.io.*;代替
+  ```
 （主函数字段省略）
 
 * 创建文件对象
-```java
-File file=new File("name.txt");//创建文件对象，文件不存在会自动创建
-```
+  ```java
+  File file=new File("name.txt");//创建文件对象，文件不存在会自动创建
+  ```
 * 创建打印输出流
-```java
-PrintStream ps=null;//new可能异常，用try-catch语句处理
-try{ps=new PrintStream("D:\\scr\\test.txt");}//文件具体路径
-catch(Exception e){System.out.println("输出流创建错误！");}
-```
+  ```java
+  PrintStream ps=null;//new可能异常，用try-catch语句处理
+  try{ps=new PrintStream("D:\\scr\\test.txt");}//文件具体路径
+  catch(Exception e){System.out.println("输出流创建错误！");}
+  ```
 * 把创建的打印输出流赋给系统。即系统下次向 ps输出\
 在此之前，最好事先保存系统默认的打印输出流
-```java
-
-System.setOut(ps);
-```
-此时输出都在文件上
-```java
-System.out.println("Hello World!");
-System.out.println("你好!");
-```
+  ```java
+  PrintStream out=System.out;//保存系统默认的打印输出流
+  System.setOut(ps);//改变打印输出流
+  ```
+  此时输出都在文件上 
+  ```java
+  System.out.println("Hello World!");
+  System.out.println("你好!");
+  ```
   文件如下图:\
 \
 [![File-1.png](https://i.postimg.cc/FHrxwPYh/File-1.png)](https://postimg.cc/MvLRQm0L)
 * 恢复打印输出流
-```java
-ps.close();//使用完及时释放
-System.setOut(out);
-System.out.Println("输出流回到屏幕");
-```
-输出如下图\
+  ```java
+  ps.close();//使用完及时释放
+  System.setOut(out);
+  System.out.Println("输出流回到屏幕");
+  ```
+  输出如下图\
 [![File-2.png](https://i.postimg.cc/9M3yDBd8/File-2.png)](https://postimg.cc/CZNRtk6k)
 \
 \
