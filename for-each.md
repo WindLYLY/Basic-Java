@@ -18,7 +18,7 @@ for(int n:num){
 ## 用法实例
 题目：\
 [附上力扣589题原链接](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/)\
-[![20230402121142.png](https://i.postimg.cc/1zn29Bkc/20230402121142.png)](https://postimg.cc/DWhB6ry8)\
+[![20230402121142.png](https://i.postimg.cc/HWvSLRmG/20230402121142.png)](https://postimg.cc/0rmGWtrZ)\
 题目已定义的Node类n叉树：
 ```java
 /*
