@@ -21,7 +21,7 @@
   ```java
   Scanner input=null;//new可能异常，用try-catch语句处理
   try{input=new Scanner(file);}
-  catch(Exception e){System.out.println("Scanner对象创建错误！")}
+  catch(Exception e){System.out.println("Scanner对象创建错误！");}
   ```
 * 用String数据类型接受文件的输入\
   假设有十个字符串（Scanner对象会自动以空格为分隔符）
