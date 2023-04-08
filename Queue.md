@@ -25,6 +25,12 @@ Queue<Integer> queue=new LinkedList<>();
 这两个方法都有返回值，为压入元素的值\
 区别为：\
 超出容量时add方法会抛出异常，而offer方法会返回false
+## 队列的复制
+* addAll方法：
+  ```java
+  Queue<Integer> clone=new LinkedList<>();
+  clone.addAll(queue);//将queue的数据复制到新队列clone中
+  ```
 ## 删除元素
 即元素出队，同时删除元素
 * remove方法：
