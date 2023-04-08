@@ -61,6 +61,19 @@ Queue<Integer> queue=new LinkedList<>();
   ```
 区别为：\
 队列容量为0时element方法会抛出异常，peek方法会返回null\
+## 队列其他操作
+* 队列判空
+  isEmpty方法：
+  ```java
+  queue.isEmpty();
+  //所有元素均已出队，队列为空return true
+  ```
+* 队列大小
+  size方法：
+  ```java
+  queue.size();
+  //此时队列为空，size=0，故return 0
+  ```
 \
 \
 完结！
